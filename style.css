@@ -1,0 +1,169 @@
+ html,
+body {
+  /* height: 10%; */
+} 
+.container {
+    margin-top: 14rem;
+    margin-left: 45rem;
+   
+}
+
+.input-text{
+    align-items: center;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 65px;
+  width: 35px;
+  margin-right: 120px;
+}
+.btn-AC {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+
+.btn-div {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-1 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+
+.btn-PlusMinus {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-Mod {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-√ {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+
+.btn-7 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-8 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-9 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-÷ {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+
+.btn-4 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-5 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-6 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-× {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+
+.btn-2 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-3 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-- {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+
+.btn-0 {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-dot {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-plus {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+.btn-equals {
+  height: 80px;
+  width: 65px;
+  font-size: 25px;
+}
+
+.input-text {
+  display: flex;
+  background-color: rgb(125, 139, 139);
+  position: relative;
+  border: solid;
+  justify-content: center;
+  font-size: 28px;
+  height: 55px;
+  width: 255px;
+  /* margin-left: -15px; */
+  /* margin-left: 30px; */
+  color: black;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* overflow-x: scroll; */
+}
+.buttons {
+  position: relative;
+}
+
+/* ======== MEDIA QUERY(SMedium Devices) ======= */
+@media screen and (max-width:1024px){
+    .container{
+        margin-top: 20rem;
+        margin-left: 18rem;
+    }
+
+}
+
+/* ======== MEDIA QUERY(Small Devices) ======= */
+@media screen and (max-width:600px){
+    
+}
+
+
