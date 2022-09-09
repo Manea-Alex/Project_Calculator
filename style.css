@@ -1,15 +1,15 @@
  html,
 body {
-  height: 10%;
-} */
+  /* height: 10%; */
+} 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 55vh; */
-  /* flex-direction: column; */
-  margin-left: -20px;
-  height: 1000px;
+    margin-top: 14rem;
+    margin-left: 45rem;
+   
+}
+
+.input-text{
+    align-items: center;
 }
 .buttons {
   display: grid;
@@ -17,7 +17,6 @@ body {
   height: 65px;
   width: 35px;
   margin-right: 120px;
-  /* row-gap: 5px; */
 }
 .btn-AC {
   height: 80px;
@@ -152,6 +151,19 @@ body {
 .buttons {
   position: relative;
 }
-.box {
-  height: 65vh;
+
+/* ======== MEDIA QUERY(SMedium Devices) ======= */
+@media screen and (max-width:1024px){
+    .container{
+        margin-top: 20rem;
+        margin-left: 18rem;
+    }
+
 }
+
+/* ======== MEDIA QUERY(Small Devices) ======= */
+@media screen and (max-width:600px){
+    
+}
+
+
