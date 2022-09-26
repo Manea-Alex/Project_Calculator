@@ -1,169 +1,333 @@
- html,
 body {
-  /* height: 10%; */
-} 
-.container {
-    margin-top: 14rem;
-    margin-left: 45rem;
-   
+  background-color: aqua;
+  background: rgb(32, 95, 152);
+  background: linear-gradient(
+    90deg,
+    rgba(32, 95, 152, 0.44861694677871145) 0%,
+    rgba(130, 157, 230, 0.8547794117647058) 39%,
+    rgba(176, 234, 206, 1) 100%,
+    rgba(229, 239, 172, 1) 100%
+  );
 }
 
-.input-text{
-    align-items: center;
+.calculator {
+  display: flex;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  margin-top: 4rem;
+}
+.container {
+  align-items: center;
+  text-align: center;
+  outline: 1px solid limegreen !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.input-text {
+  display: flex;
+  /* background-color: rgb(125, 139, 139); */
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 5rem;
+  width: 18rem;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
 }
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 65px;
-  width: 35px;
-  margin-right: 120px;
+  width: 16rem;
 }
 .btn-AC {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .btn-div {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-1 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .btn-PlusMinus {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-Mod {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.6rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-√ {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .btn-7 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-8 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-9 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-÷ {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .btn-4 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-5 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-6 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-× {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .btn-2 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-3 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-- {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .btn-0 {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-dot {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-plus {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .btn-equals {
-  height: 80px;
-  width: 65px;
-  font-size: 25px;
+  height: 5rem;
+  width: 4.5rem;
+  font-size: 1.6rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.input-text {
-  display: flex;
-  background-color: rgb(125, 139, 139);
+/* .buttons {
   position: relative;
-  border: solid;
-  justify-content: center;
-  font-size: 28px;
-  height: 55px;
-  width: 255px;
-  /* margin-left: -15px; */
-  /* margin-left: 30px; */
-  color: black;
-  align-items: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  /* overflow-x: scroll; */
-}
-.buttons {
-  position: relative;
-}
+} */
 
 /* ======== MEDIA QUERY(SMedium Devices) ======= */
-@media screen and (max-width:1024px){
-    .container{
-        margin-top: 20rem;
-        margin-left: 18rem;
-    }
+@media screen and (max-width: 600px) {
+  .input-text {
+    height: 3rem;
+    width: 14rem;
+    overflow: hidden;
+    font-size: 1.5rem;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 10rem;
+  }
+  .btn-AC {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
 
+  .btn-div {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-1 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .btn-PlusMinus {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-Mod {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.6rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-√ {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .btn-7 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-8 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-9 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-÷ {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.8rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .btn-4 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-5 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-6 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-× {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .btn-2 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-3 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-- {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.8rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  .btn-0 {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-dot {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-plus {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.4rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .btn-equals {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.6rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
 }
 
 /* ======== MEDIA QUERY(Small Devices) ======= */
-@media screen and (max-width:600px){
-    
+@media screen and (max-width: 600px) {
 }
-
-
