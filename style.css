@@ -1,3 +1,4 @@
+/* Sets the background of the entire page with a linear gradient */
 body {
   background-color: aqua;
   background: rgb(32, 95, 152);
@@ -9,7 +10,7 @@ body {
     rgba(229, 239, 172, 1) 100%
   );
 }
-
+/* Styles for the calculator title */
 .calculator {
   display: flex;
   justify-content: center;
@@ -17,6 +18,8 @@ body {
   font-size: 3rem;
   margin-top: 4rem;
 }
+
+/* Container for the calculator, centered on the screen */
 .container {
   align-items: center;
   text-align: center;
@@ -26,6 +29,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Styles for the display where input and results are shown */
 .input-text {
   display: flex;
   /* background-color: rgb(125, 139, 139); */
@@ -34,154 +39,61 @@ body {
   align-items: center;
   font-size: 2rem;
   height: 5rem;
-  width: 18rem;
+  width: 27rem;
   color: #fff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2rem;
 }
+
+/* Grid layout for the calculator buttons */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 16rem;
-}
-.btn-AC {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 27rem;
 }
 
-.btn-div {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-1 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.btn-PlusMinus {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-Mod {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.6rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-√ {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.btn-7 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-8 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-9 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-÷ {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.8rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.btn-4 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-5 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-6 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-× {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.btn-2 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-3 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-- {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.8rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.btn-0 {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.btn-dot {
-  height: 5rem;
-  width: 4.5rem;
-  font-size: 1.4rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
+/* General button styling */
+.btn-AC,
+.btn-div,
+.btn-1,
+.btn-div,
+.btn-1,
+.btn-PlusMinus,
+.btn-√,
+.btn-7,
+.btn-8,
+.btn-9,
+.btn-4,
+.btn-5,
+.btn-6,
+.btn-×,
+.btn-2,
+.btn-3,
+.btn-0,
+.btn-dot,
 .btn-plus {
   height: 5rem;
-  width: 4.5rem;
   font-size: 1.4rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+/*  button styling for the modulo and equals buttons */
+.btn-Mod,
 .btn-equals {
   height: 5rem;
-  width: 4.5rem;
   font-size: 1.6rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/* .buttons {
-  position: relative;
-} */
+/*button styling for the addition and subtract buttons */
+.btn-÷,
+.btn-- {
+  height: 5rem;
+  font-size: 1.8rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
-/* ======== MEDIA QUERY(SMedium Devices) ======= */
+/* ======== MEDIA QUERY(Small Devices) ======= */
 @media screen and (max-width: 600px) {
   .input-text {
     height: 3rem;
@@ -194,140 +106,43 @@ body {
     grid-template-columns: repeat(4, 1fr);
     width: 10rem;
   }
-  .btn-AC {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
-  .btn-div {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-1 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
-  .btn-PlusMinus {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-Mod {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.6rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-√ {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
-  .btn-7 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-8 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-9 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-÷ {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.8rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
-  .btn-4 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-5 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-6 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-× {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
-  .btn-2 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-3 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-- {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.8rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-
-  .btn-0 {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
-  .btn-dot {
-    height: 3.5rem;
-    width: 3.5rem;
-    font-size: 1.4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  }
+  .btn-AC,
+  .btn-div,
+  .btn-1,
+  .btn-div,
+  .btn-1,
+  .btn-PlusMinus,
+  .btn-√,
+  .btn-7,
+  .btn-8,
+  .btn-9,
+  .btn-4,
+  .btn-5,
+  .btn-6,
+  .btn-×,
+  .btn-2,
+  .btn-3,
+  .btn-0,
+  .btn-dot,
   .btn-plus {
     height: 3.5rem;
     width: 3.5rem;
     font-size: 1.4rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
+
+  .btn-Mod,
   .btn-equals {
     height: 3.5rem;
     width: 3.5rem;
     font-size: 1.6rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
-}
-
-/* ======== MEDIA QUERY(Small Devices) ======= */
-@media screen and (max-width: 600px) {
+  .btn-÷,
+  .btn-- {
+    height: 3.5rem;
+    width: 3.5rem;
+    font-size: 1.8rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
 }

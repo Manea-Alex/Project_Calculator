@@ -1,22 +1,24 @@
+// Select all button elements on the page
 const buttons = document.querySelectorAll("button");
+
+// Log the width of the button container for debugging purposes
 console.log(
   "The width of the buttons is ",
   document.getElementById("btns").offsetWidth
 );
+// Select the input display element where the results and inputs are shown
 const input = document.getElementById("div");
-console.log(input);
-function display(e) {
-  input.textContent = this.textContent;
-  return;
-  console.log(this.textContent);
-}
 
+// Define variables for the number input and the operation mode
 let num, mode;
 
+// Function to handle the equals operation based on the mode (operation type)
 const equals = function (mode) {
+  // Intermediary variables and a switch statement to handle different operations
   let string_i, reverse, count, final_counter;
 
   switch (mode) {
+    // The case for division operation
     case "/":
       let intermediary1 = Number(num) / Number(input.textContent);
       string_i = intermediary1.toString();
@@ -27,24 +29,9 @@ const equals = function (mode) {
         if (reverse[i] != ".") count++;
         else break;
       }
-      console.log(
-        "count e ",
-        count,
-        "primul numar e ",
-        Number(num),
-        "al doilea numar e ",
-        Number(input.textContent),
-        "Variabila intermediara e: ",
-        intermediary1,
-        "cu lungimea intermediary.tostring().length",
-        intermediary1.toString().length
-      );
-      if (
-        // intermediary1.toString().length >= 14 &&
-        count > 12
-      ) {
-        final_counter = count - 11; //3 decimals after, actually it doesnt work like i thought it would
-        //but anyways.
+      if (count > 11) {
+        final_counter = count - 11;
+
         input.textContent = parseFloat(intermediary1.toFixed(final_counter));
         console.log("count final e ", final_counter);
       } else input.textContent = intermediary1;
@@ -54,6 +41,7 @@ const equals = function (mode) {
       );
 
       break;
+    // The case for multiplication operation
     case "×":
       console.log("inmultire");
       let intermediary2 = Number(num) * Number(input.textContent);
@@ -66,24 +54,8 @@ const equals = function (mode) {
         if (reverse[i] != ".") count++;
         else break;
       }
-      console.log(
-        "count e ",
-        count,
-        "primul numar e ",
-        Number(num),
-        "al doilea numar e ",
-        Number(input.textContent),
-        "Variabila intermediara e: ",
-        intermediary2,
-        "cu lungimea intermediary.tostring().length",
-        intermediary2.toString().length
-      );
-      if (
-        // intermediary2.toString().length >= 14 &&
-        count > 11
-      ) {
-        final_counter = count - 11; //3 decimals after, actually it doesnt work like i thought it would
-        //but anyways.
+      if (count > 11) {
+        final_counter = count - 11;
         input.textContent = parseFloat(intermediary2.toFixed(final_counter));
         console.log("count final e ", final_counter);
       } else input.textContent = intermediary2;
@@ -93,6 +65,7 @@ const equals = function (mode) {
       );
 
       break;
+    // The case for addition operation
     case "+":
       let intermediary3 = Number(num) + Number(input.textContent);
       string_i = intermediary3.toString();
@@ -104,29 +77,8 @@ const equals = function (mode) {
         else break;
       }
 
-      console.log(
-        "count e ",
-        count,
-        "count final e ",
-        count - 11,
-        "primul numar e ",
-        Number(num),
-        "al doilea numar e ",
-        Number(input.textContent),
-        "Variabila intermediara e: ",
-        intermediary3,
-        "cu lungimea intermediary.tostring().length",
-        intermediary3.toString().length
-        // "numaru final dupa crop cand pun numar in paranteza la tofixed()",
-        // parseFloat(intermediary3.toFixed(6)),
-        // "numaru final dupa crop cand pun variabila in paranteza la tofixed()",
-        // parseFloat(intermediary3.toFixed(count - 11))
-      );
-      if (
-        // intermediary3.toString().length >= 14 &&
-        count > 11
-      ) {
-        final_counter = count - 11; //3 decimals after, actually it doesnt work like i thought it would
+      if (count > 11) {
+        final_counter = count - 11;
         input.textContent = parseFloat(intermediary3.toFixed(final_counter));
         console.log("count final e ", final_counter);
       } else input.textContent = intermediary3;
@@ -136,6 +88,7 @@ const equals = function (mode) {
       );
 
       break;
+    // The case for substraction operation
     case "-":
       console.log("scadere");
       if (num.length >= input.textContent.length) {
@@ -150,24 +103,8 @@ const equals = function (mode) {
         if (reverse[i] != ".") count++;
         else break;
       }
-      console.log(
-        "count e ",
-        count,
-        "primul numar e ",
-        Number(num),
-        "al doilea numar e ",
-        Number(input.textContent),
-        "Variabila intermediara e: ",
-        intermediary,
-        "cu lungimea intermediary.tostring().length",
-        intermediary.toString().length
-      );
-      //3 decimals after, actually it doesnt work like i thought it would
-      //but anyways.
-      if (
-        // intermediary.toString().length >= 14 &&
-        count > 11
-      ) {
+
+      if (count > 11) {
         final_counter = count - 11;
         console.log("final counter ", final_counter);
         input.textContent = parseFloat(intermediary.toFixed(final_counter));
@@ -178,6 +115,7 @@ const equals = function (mode) {
         intermediary.toString().length
       );
       break;
+    // The case for moudulo operation
     case "%":
       console.log("modul");
       let intermediary4 = Number(num) % Number(input.textContent);
@@ -189,24 +127,8 @@ const equals = function (mode) {
         if (reverse[i] != ".") count++;
         else break;
       }
-      console.log(
-        "count e ",
-        count,
-        "primul numar e ",
-        Number(num),
-        "al doilea numar e ",
-        Number(input.textContent),
-        "Variabila intermediara e: ",
-        intermediary4,
-        "cu lungimea intermediary.tostring().length",
-        intermediary4.toString().length
-      );
-      if (
-        // intermediary4.toString().length >= 14 &&
-        count > 11
-      ) {
-        final_counter = count - 11; //3 decimals after, actually it doesnt work like i thought it would
-        //but anyways.
+      if (count > 11) {
+        final_counter = count - 11;
         input.textContent = parseFloat(intermediary4.toFixed(final_counter));
         console.log("count final e ", final_counter);
       } else input.textContent = intermediary4;
@@ -216,28 +138,18 @@ const equals = function (mode) {
       );
       break;
   }
-
-  console.log(
-    "iese din functia equals",
-    Number(num),
-    Number(input.textContent)
-  );
-  console.log(mode);
-  if (mode === undefined) {
-    console.log("mod nedefinit");
-    return;
-  }
-  if (num === undefined) {
-    console.log("numar nedefinit");
-    return;
-  }
 };
 
+// Function to handle operations (+, -, *, /, %)
 const operationHandler = function (op) {
+  // Store the current input in num and clear the display
   num = input.textContent;
   input.textContent = "";
 };
+
+// Function to handle button clicks
 const buttonHandler = function (e) {
+  // If the button's content is a number, append it to the display
   if (!isNaN(Number(this.textContent))) {
     console.log(
       "btnhandler number",
@@ -257,12 +169,9 @@ const buttonHandler = function (e) {
 
     console.log("Lungimea inputului: ", input.textContent.length);
     return;
-
-    //afiseaza numerele. Dau click pe 8 sa zicem, il pune in input. Dupa
-    //aleg semnu sa zicem '-' si nu l pune, dupa dau click pe alt numar si
-    //l pune.
   }
 
+  // Switch statement to handle different button functions like clear, plus/minus, backspace, etc.
   switch (this.textContent) {
     case "AC":
       input.textContent = "";
@@ -295,9 +204,6 @@ const buttonHandler = function (e) {
       );
       input.textContent = input.textContent.slice(0, -1);
       break;
-
-    // console.log("The mode is", mode);
-
     case "=":
       equals(mode);
       break;

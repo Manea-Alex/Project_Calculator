@@ -4,22 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to the external CSS for styling -->
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- JavaScript file that contains the logic of the calculator -->
     <script type="text/javascript" src="index.js" defer></script>
+    <!-- Title shown on the browser tab -->
     <title>Calculator</title>
   </head>
 
   <body>
     <div class="calculator">Calculator</div>
+    <!-- The main container that holds the calculator's display and buttons -->
     <div class="container">
-      <!-- Calculator -->
+      <!-- Calculato dislay area where input and results are shownr -->
       <div class="input-text" id="div"></div>
+      <!-- The section containing all the calculator buttons -->
       <div class="buttons" id="btns">
+        <!-- Each button is defined with a class for styling -->
         <button type="button" class="btn-AC">AC</button>
         <button type="button" class="btn-PlusMinus">+/-</button>
         <button type="button" class="btn-Mod">%</button>
         <button type="button" class="btn-div">/</button>
 
+        <!-- Numeric buttons -->
         <button type="button" class="btn-7">7</button>
         <button type="button" class="btn-8">8</button>
         <button type="button" class="btn-9">9</button>
@@ -28,13 +35,17 @@
         <button type="button" class="btn-4">4</button>
         <button type="button" class="btn-5">5</button>
         <button type="button" class="btn-6">6</button>
+        <!-- The multiplication button -->
         <button type="button" class="btn-×">×</button>
 
+        <!-- More numeric buttons -->
         <button type="button" class="btn-1">1</button>
         <button type="button" class="btn-2">2</button>
         <button type="button" class="btn-3">3</button>
+        <!-- The subtraction button -->
         <button type="button" class="btn--">-</button>
 
+        <!-- The zero, decimal, and operation buttons -->
         <button type="button" class="btn-0">0</button>
         <button type="button" class="btn-dot" id="dot">.</button>
         <button type="button" class="btn-plus">+</button>
